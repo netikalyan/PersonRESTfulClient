@@ -45,19 +45,25 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // AndroidX dependencies
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     // Type-safe HTTP client for Android and Java by Square, Inc. (https://square.github.io/retrofit/)
     implementation 'com.squareup.retrofit2:retrofit:2.6.2'
-    // A Converter which uses Gson for serialization to and from JSON.
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
     // A Converter which uses Jackson (JSON library for Java) for serialization to and from JSON.
     implementation 'com.squareup.retrofit2:converter-jackson:2.6.2'
     // A Converter which uses JAXB (The Java™ Architecture for XML Binding) for serialization to and from XML.
     implementation 'com.squareup.retrofit2:converter-jaxb:2.6.2'
+
+    // Test dependencies
+    testImplementation 'junit:junit:4.12'
+    // AndroidJUnitRunner dependencies
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    // AndroidJUnit4 dependencies
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    // Espresso dependencies
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }

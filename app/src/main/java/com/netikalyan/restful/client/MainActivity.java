@@ -40,7 +40,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.jackson.JacksonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         Retrofit.Builder builder = new Retrofit.Builder()
                 .baseUrl(PERSON_RESTFUL_SERVICE)
-                .addConverterFactory(GsonConverterFactory.create());
+                .addConverterFactory(JacksonConverterFactory.create());
         Retrofit retrofit = builder.build();
         IPersonService service = retrofit.create(IPersonService.class);
         Call<List<Person>> call = service.listAllPersons();
