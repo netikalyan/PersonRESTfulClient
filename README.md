@@ -2,7 +2,7 @@
 # RESTful Client in Android
 REST, an acronym for REpresentational State Transfer, is an architectural style for developing applications that can be accessed over the network. **[JAX-RS](https://docs.oracle.com/javaee/6/tutorial/doc/giepu.html)** (Java API for RESTful Web Services) is the Java API for creating REST web services.
 
-PersonRESTfulService exposes the following methods over HTTP.
+**[PersonRESTfulService](https://github.com/netikalyan/PersonRESTfulService)** exposes the following methods over HTTP.
 
 | URI | HTTP Method | Description |
 | --- | --- | --- |
