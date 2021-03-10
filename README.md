@@ -1,4 +1,4 @@
-![Android Build](https://github.com/netikalyan/PersonRESTfulClient/actions/workflows/android.yml/badge.svg)
+![Android Build](https://github.com/netikalyan/PersonRESTfulClient/actions/workflows/android.yml/badge.svg?branch=master)
 # RESTful Client in Android
 REST, an acronym for REpresentational State Transfer, is an architectural style for developing applications that can be accessed over the network. **[JAX-RS](https://docs.oracle.com/javaee/6/tutorial/doc/giepu.html)** (Java API for RESTful Web Services) is the Java API for creating REST web services.
 
